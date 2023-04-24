@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 import time
-url = "file:///D:/独学/Python/Selenium+BeautifulSoup/project-selenium/html/menu.html"
+import sys
+sys.path.append("..")
+from path.path import *
+
+url = HTML_FILE_PATH "menu.html"
 driver = webdriver.Chrome()
 driver.get(url)
 # タイトル取得

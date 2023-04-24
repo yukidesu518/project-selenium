@@ -2,8 +2,11 @@
 from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
+import sys
+sys.path.append("..")
+from path.path import *
 
-url = "file:///D:/独学/Python/Selenium+BeautifulSoup/project-selenium/html/menu.html"
+url = HTML_FILE_PATH + "menu.html"
 driver = webdriver.Chrome()
 driver.get(url)
 # テキストリンクがCoffeeの要素を取得しクリック
