@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 import time
+from selenium.webdriver.common.by import By
+import sys
+sys.path.append("..")
+from path.path import *
+
 driver = webdriver.Chrome()
-url_menu = "file:///C:/Users/writer/study_work/html/menu.html"
-url_coffee = "file:///C:/Users/writer/study_work/html/coffee.html"
+
+url_menu = HTML_FILE_PATH + "menu.html"
+url_coffee = HTML_FILE_PATH + "coffee.html"
+
 # [1] このタブは1つめなので driver.window_handles[0]
 driver.get(url_menu)
 time.sleep(1)
