@@ -1,1 +1,4 @@
-path/**
+python/path.py
+python/tcu_pass.py
+*.pyc
+yomiage.mp3

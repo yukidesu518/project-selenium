@@ -8,4 +8,7 @@ HTML_FILE_PATH = "～project-selenium/html/"
 
 で管理。
 
-path/**はgit管理除外
+# ライブラリ
+python/requirements.txtを
+pip install -r requirements.txt
+で一括インストール
