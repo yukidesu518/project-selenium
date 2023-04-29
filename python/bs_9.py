@@ -1,12 +1,20 @@
+# -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from bs4 import BeautifulSoup
 import time
-url = "file:///C:/Users/writer/study_work/html/menu.html"
+from selenium.webdriver.common.by import By
+from path import *
+
+url = HTML_FILE_PATH + "menu.html"
+
 driver = webdriver.Chrome()
+
 driver.implicitly_wait(10)
+
 driver.get(url)
+
 # HTMLをパースして"商品名,単価" の文字列を返す
 def get_parsed_data(html):
     soup = BeautifulSoup(html, "html.parser")
@@ -15,8 +23,10 @@ def get_parsed_data(html):
     unit_price = unit_price.replace("円","")
     data = item_name + "," + unit_price
     return data
+
 # １．リンクの要素を取得
-item_links = driver.find_elements_by_css_selector("ul.item_link > li > a")
+item_links = driver.find_elements(By.CSS_SELECTOR, "ul.item_link > li > a")
+
 for item_link in item_links:
     # ２．Ctrl + クリック
     actions = ActionChains(driver)
@@ -34,4 +44,5 @@ for item_link in item_links:
     driver.close()
     # ５．元のタブへ移動
     driver.switch_to.window(driver.window_handles[0])
+
 driver.quit()

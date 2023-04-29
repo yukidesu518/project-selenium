@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 import time
-import sys
-sys.path.append("..")
+
 from path.path import *
 
 url = HTML_FILE_PATH "menu.html"

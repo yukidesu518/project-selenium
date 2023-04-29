@@ -2,8 +2,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-import sys
-sys.path.append("..")
+
 from path.path import *
 
 # headlessモードにする

@@ -3,8 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 from selenium.webdriver.common.by import By
-import sys
-sys.path.append("..")
+
 from path.path import *
 
 url = HTML_FILE_PATH + "key.html"

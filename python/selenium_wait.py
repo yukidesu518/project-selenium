@@ -4,8 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import time
-import sys
-sys.path.append("..")
+
 from path.path import *
 
 url = HTML_FILE_PATH + "wait.html"

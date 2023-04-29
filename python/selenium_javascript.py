@@ -3,8 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.alert import Alert
 import time
 from selenium.webdriver.common.by import By
-import sys
-sys.path.append("..")
+
 from path.path import *
 
 url = HTML_FILE_PATH + "javascript.html"
