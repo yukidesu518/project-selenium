@@ -2,7 +2,7 @@
 書籍『Pythonをおぼえたらブラウザ操作を自動化しよう』の学習用サンプルコードです。
 
 # ファイルパスについて
-project-selenium/内にpath/path.pyを作成
+project-selenium/python内に/path.pyを作成
 
 HTML_FILE_PATH = "～project-selenium/html/"
 
