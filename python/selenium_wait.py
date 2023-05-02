@@ -9,7 +9,7 @@ from path.path import *
 
 url = HTML_FILE_PATH + "wait.html"
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(../webdriver/)
 driver.get(url)
 
 # 要素(id='msg')が現れるまで待機

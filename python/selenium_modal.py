@@ -8,7 +8,7 @@ from path.path import *
 
 url = "file:///C:/Users/writer/study_work/html/modal.html"
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(../webdriver/)
 driver.get(url)
 
 # [1] モーダルを出すボタン

@@ -7,7 +7,7 @@ from path.path import *
 
 url = HTML_FILE_PATH + "javascript.html"
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(../webdriver/)
 driver.get(url)
 
 driver.save_screenshot("screenshot.png")

@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from path.path import *
 
 url = HTML_FILE_PATH + "menu.html"
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(../webdriver/)
 driver.get(url)
 # テキストリンクがCoffeeの要素を取得しクリック
 element = driver.find_element(By.LINK_TEXT, "Coffee")

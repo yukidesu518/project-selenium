@@ -1,2 +1,2 @@
-HTML_FILE_PATH = "file:///D:/独学/Python/Selenium+BeautifulSoup/project-selenium/html/"
+HTML_FILE_PATH = "file:///C:/Users/yimam/Desktop/git/project-selenium/project-selenium/html/"
 

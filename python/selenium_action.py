@@ -10,7 +10,7 @@ from path.path import *
 
 url = HTML_FILE_PATH + "menu.html"
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(../webdriver/)
 driver.get(url)
 
 tag_link = driver.find_element(By.TAG_NAME, "a")

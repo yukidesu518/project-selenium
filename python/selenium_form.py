@@ -11,7 +11,7 @@ from path.path import *
 
 url = HTML_FILE_PATH + "coffee.html"
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(../webdriver/)
 driver.get(url)
 
 # プルダウン要素からSelectインスタンスを取得

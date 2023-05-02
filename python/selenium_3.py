@@ -5,7 +5,7 @@ import time
 from path.path import *
 
 url = HTML_FILE_PATH "menu.html"
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(../webdriver/)
 driver.get(url)
 # タイトル取得
 title = driver.title

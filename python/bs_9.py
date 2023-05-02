@@ -9,7 +9,7 @@ from path import *
 
 url = HTML_FILE_PATH + "menu.html"
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(../webdriver/)
 
 driver.implicitly_wait(10)
 

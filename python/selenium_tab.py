@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 
 from path.path import *
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(../webdriver/)
 
 url_menu = HTML_FILE_PATH + "menu.html"
 url_coffee = HTML_FILE_PATH + "coffee.html"

@@ -8,7 +8,7 @@ from path.path import *
 
 url = HTML_FILE_PATH + "file.html"
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(../webdriver/)
 driver.get(url)
 
 upfile = "D:/独学/Python/Selenium+BeautifulSoup/project-selenium/html/test.txt"
